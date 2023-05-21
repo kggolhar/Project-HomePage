@@ -1,0 +1,333 @@
+<section>
+
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <div class="d-flex justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Find a Doctor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Investors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </div>
+
+
+            <div class="d-flex justify-content-end">
+                <li class="nav-item location ">
+                    <select class="dropdown nav-item btn btn-light">
+                        <option class="dropdown-item " value="" *ngFor="let city of cities">{{city}}</option>
+                    </select>
+                </li>
+                &nbsp;
+                <li class="nav-item language ">
+                    <select class="dropdown nav-item btn btn-light">
+                        <option class="dropdown-item " value="" *ngFor="let language of languages">{{language}}</option>
+                    </select>
+                </li>
+                &nbsp;
+
+                <li class="nav-item">
+
+                    <img class="nav-link" type="button" (click)="onSearchBar()"
+                        src="https://www.fortishealthcare.com/drupal-data/images/search-icon.svg" alt="">
+                </li>
+
+                <li class="nav-item">
+
+                    <img class="nav-link" type="button" (click)="onAmbulance()"
+                        src="https://www.fortishealthcare.com/drupal-data/images/ambulance.svg" alt="">
+
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="container d-flex">
+        <div class="col-2">
+            <a href="">
+                <img src="https://www.fortishealthcare.com/themes/custom/fortis/logo.png" alt="" width="120rem">
+            </a>
+        </div>
+        
+        <div class="col-10">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <select class="dropdown nav-item btn btn-light">
+                        <option class="dropdown-item " value="" *ngFor="let Hospital of hospitals">{{Hospital}}</option>
+                    </select>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                    <select class="dropdown nav-item btn btn-light">
+                        <option class="dropdown-item " value="" *ngFor="let Speciality of Specialities">{{Speciality}}</option>
+                    </select>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media Centre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">International Section</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="nav justify-content-center ">
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_self">
+                    <img src="https://www.fortishealthcare.com/drupal-data/2023-02/Group%2022261.svg" alt="" class="">
+                    Request a Callback
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_self">
+                    <button type="button" class="btn btn-danger btn-sm rounded-pill">
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-02/Book-appointment1%20%281%29%20%281%29.svg"
+                            alt="">
+                        Booking Appointment
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_self">
+                    <img src="https://www.fortishealthcare.com/drupal-data/2023-02/Group%2022265113.svg" alt=""
+                        class="">
+                    Get Health Checkup
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="home-banner-img d-flex flex-column container-fluid">
+    <div class="text-center m-4 ">
+        <h1 class="">Healthcare for Good <br> Today. Tomorrow. Always</h1>
+    </div>
+    <div class="m-4">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid justify-content-center">
+                <form class="d-flex ">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search for Doctors, Specialities and Hospitals" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="d-flex container">
+    <div class="my-3">
+        <div class="card col-6 me-2 mb-2 " style="width: 25rem;">
+            <div class="">
+                <a class="d-flex" href="">
+                    <div class="card-body">
+                        <h4>Book an Appointment</h4>
+                        <p class="card-text">With country's leading exports</p>
+                    </div>
+                    <div>
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Group%209012.svg"
+                            class="card-img" alt="..." height="100rem">
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+
+        <div class="card col-6 me-2 mt-2  " style="width: 25rem;">
+            <div>
+                <a class="d-flex " href="">
+                    <div class="card-body">
+                        <h4>Specialities</h4>
+                        <p class="card-text">Our expertise in Healthcare</p>
+                    </div>
+                    <div>
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-03/specialityicon%20%281%29.png"
+                            class="card-img-top" alt="..." height="100rem">
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="my-3 ">
+        <div class="card col-6 me-2 mb-2   " style="width: 25rem;">
+            <div>
+                <a class="d-flex" href="">
+                    <div class="card-body">
+                        <h4>Hospitals</h4>
+                        <p class="card-text">Health needs under one roof</p>
+                    </div>
+                    <div>
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Group%2022247.svg"
+                            class="card-img-top" alt="..." height="100rem">
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+        <div class="card col-6 me-2 mt-2  " style="width: 25rem;">
+            <div>
+                <a class="d-flex " href="">
+                    <div class="card-body ">
+                        <h4>Doctors</h4>
+                        <p class="card-text">Top experts for your health</p>
+                    </div>
+                    <div>
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-03/Group%2021927.svg"
+                            class="card-img-top" alt="..." height="100rem">
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class=" m-3">
+        <h3>We can help you book</h3>
+        <div class="card align-items-center" style="width: 30rem; ">
+            <div class=" ">
+
+                <a class="d-flex align-items-center" href="">
+                    <div class="">
+                        <img src="https://www.fortishealthcare.com/drupal-data/2023-02/health-checkups161_0.svg"
+                            class="card-img" alt="...">
+                    </div>
+
+                    <div class="card-body ">
+                        <h4>Book an Appointment</h4>
+                        <p class="card-text">With country's leading exports</p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <div class="card bg-primary">
+        <div class="card-body d-flex justify-content-between">
+            <div class="">
+                <h4 class="text-light">All medical records, reports & prescriptions in one place </h4>
+                <a href="">
+                    <button type="button" class="btn btn-light" href="">View Report</button>
+                </a>
+
+            </div>
+            <div class="justify-content-end">
+                <img src="https://fhlazwebsap01.blob.core.windows.net/drupal-data/inline-images/report.png" alt=""
+                    width="100rem">
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section class="container">
+
+    <div class="card bg-primary">
+        <div class="card-body d-flex justify-content-between">
+            <div class="">
+                <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/FHL-Website_QR%20Code.png"
+                    alt="" width="80rem">
+            </div>
+            <div class="">
+                <h4 class="text-light">Keep track of your appointments, get updates & more!</h4>
+
+
+            </div>
+            <div class="">
+                <a href="">
+                    <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/app-store11.png" alt=""
+                        width="180rem">
+
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/google-play11.png" alt=""
+                        width="180rem">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <hr>
+
+    <div class="container d-flex justify-content-between">
+
+        <div>
+            <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/footer.png" alt="">
+            <pre>Tower A, Unitech Business Park,                    
+Block - F, South City 1, Sector - 41,                    
+Gurgaon, Haryana - 122001</pre>
+        </div>
+        <div class="d-flex flex-column justify-content-evenly">
+            <div class="text-center">
+                <b>STAY IN TOUCH</b>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com/fortis.healthcare" target="_blank">
+                    <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/instagrame.png"
+                        alt="instagram" width="50rem">
+                </a>
+                <a href="https://www.facebook.com/fortishealth" target="_blank">
+                    <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/facebook.png"
+                        alt="facebook" width="50rem">
+                </a>
+                <a href="https://twitter.com/fortis_hospital" target="_blank">
+                    <img src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/twitter.png" alt="twitter"
+                        width="50rem">
+                </a>
+                <a href="https://www.youtube.com/channel/UCn0ShMNqXI3kQP-Eoaf7olg" target="_blank"><img
+                        src="https://fhlazwebsau01.blob.core.windows.net/drupal-data/2023-03/youtube.png" alt="youtube"
+                        width="50rem">
+                </a>
+            </div>
+
+        </div>
+
+        <div>
+            <a href="">Contact Us</a> |
+            <a href="">Gifting</a> |
+            <a href="">Policy</a> | <br>
+
+            <a href="">Online payment & refund policy</a> |
+            <a href="">Privacy Policy</a> |
+            <a href="">Tele-consult</a> | <br>
+
+            <a href="">Terms & Conditions</a> |
+
+            <p>© 2022 Fortis Healthcare. All Rights Reserved.</p>
+        </div>
+    </div>
+</section>

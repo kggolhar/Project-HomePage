@@ -1,0 +1,17 @@
+.home-banner-img{
+    background-image: url(https://www.fortishealthcare.com/drupal-data/styles/banner_image/azblob/2023-03/New-Web-Banner-03.jpg?itok=cxkOaBxp);
+}
+
+a {
+    text-decoration:none;
+    color: black;
+ }
+
+.location::before{
+    content: url(https://www.fortishealthcare.com/drupal-data/images/location.svg);
+}
+
+.language::before{
+    content: url(https://www.fortishealthcare.com/drupal-data/images/globe.svg);
+}
+
